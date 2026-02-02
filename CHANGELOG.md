@@ -2,6 +2,12 @@
 
 All notable changes to `file-integrity` will be documented in this file.
 
+## 0.0.3 - 2026-02-02
+
+### Fixed
+
+- Use a lower version of symfony/finder to ensure compatibility with Laravel Framework.
+
 ## 0.0.2 - 2026-02-02
 
 ### Fixed
