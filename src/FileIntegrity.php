@@ -5,8 +5,8 @@ namespace Outerweb\FileIntegrity;
 use Illuminate\Container\Attributes\Singleton;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
-use SplFileInfo;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 
 #[Singleton]
 class FileIntegrity
@@ -42,7 +42,12 @@ class FileIntegrity
                 ->ignoreDotFiles(false)
                 ->in(Config::string('file-integrity.base_path', base_path()))
                 ->notPath(Config::array('file-integrity.exclude_paths', []))
-        );
+        )
+            ->mapWithKeys(function (SplFileInfo $file): array {
+                return [
+                    $file->getRelativePathname() => $file,
+                ];
+            });
     }
 
     public function defaultOutputPath(): string
