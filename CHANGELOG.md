@@ -2,6 +2,12 @@
 
 All notable changes to `file-integrity` will be documented in this file.
 
+## 0.0.4 - 2026-02-02
+
+### Added
+
+- Added some more common file that can be ignored during integrity checks.
+
 ## 0.0.3 - 2026-02-02
 
 ### Fixed

@@ -10,5 +10,11 @@ return [
         'vendor/',
         'public/storage/',
         'storage/',
+        'bootstrap/cache/',
+        'file-integrity-checksum.json',
+        'file-integrity-checksum-remote.json',
+        '.htpasswd',
+        'public/sitemap.xml',
+        'REVISION',
     ],
 ];
