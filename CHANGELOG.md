@@ -2,6 +2,12 @@
 
 All notable changes to `file-integrity` will be documented in this file.
 
+## 0.0.5 - 2026-03-17
+
+### Added
+
+-   Added support for Laravel 13.
+
 ## 0.0.4 - 2026-02-02
 
 ### Added
